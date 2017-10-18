@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA5B1D741DEB2B78005166BA /* DownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B1D731DEB2B78005166BA /* DownloadImageView.swift */; };
+		EA5B1D761DEB3113005166BA /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5B1D751DEB3113005166BA /* StringUtils.swift */; };
+		EA6378731DF36D8A00FE06A7 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6378721DF36D8A00FE06A7 /* Prefs.swift */; };
+		EA7735B41E0D9A8B00BFD5BD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7735B31E0D9A8B00BFD5BD /* MapKit.framework */; };
+		EA7735B61E0D9A9700BFD5BD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7735B51E0D9A9700BFD5BD /* CoreLocation.framework */; };
+		EA7735BB1E0D9CA500BFD5BD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7735B91E0D9CA500BFD5BD /* MapViewController.swift */; };
+		EA7735BC1E0D9CA500BFD5BD /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA7735BA1E0D9CA500BFD5BD /* MapViewController.xib */; };
+		EA875DB71DEA6C0800178D26 /* CarroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA875DB61DEA6C0800178D26 /* CarroCell.swift */; };
+		EA875DB91DEA6C9800178D26 /* CarroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA875DB81DEA6C9800178D26 /* CarroCell.xib */; };
+		EA875DBD1DEA72C300178D26 /* carros_classicos.json in Resources */ = {isa = PBXBuildFile; fileRef = EA875DBA1DEA72C300178D26 /* carros_classicos.json */; };
+		EA875DBE1DEA72C300178D26 /* carros_esportivos.json in Resources */ = {isa = PBXBuildFile; fileRef = EA875DBB1DEA72C300178D26 /* carros_esportivos.json */; };
+		EA875DBF1DEA72C300178D26 /* carros_luxo.json in Resources */ = {isa = PBXBuildFile; fileRef = EA875DBC1DEA72C300178D26 /* carros_luxo.json */; };
+		EA875DC31DEA72D000178D26 /* carros_classicos.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA875DC01DEA72D000178D26 /* carros_classicos.xml */; };
+		EA875DC41DEA72D000178D26 /* carros_esportivos.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA875DC11DEA72D000178D26 /* carros_esportivos.xml */; };
+		EA875DC51DEA72D000178D26 /* carros_luxo.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA875DC21DEA72D000178D26 /* carros_luxo.xml */; };
+		EA875DC91DEA736C00178D26 /* XMLCarroParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA875DC81DEA736B00178D26 /* XMLCarroParser.swift */; };
+		EAA20DED1DEA165000F409DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA20DEC1DEA165000F409DB /* AppDelegate.swift */; };
+		EAA20DF71DEA165000F409DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA20DF51DEA165000F409DB /* LaunchScreen.storyboard */; };
+		EAA20E101DEA190E00F409DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E011DEA190E00F409DB /* Images.xcassets */; };
+		EAA20E121DEA190E00F409DB /* tab_carros.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E031DEA190E00F409DB /* tab_carros.png */; };
+		EAA20E131DEA190E00F409DB /* tab_carros@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E041DEA190E00F409DB /* tab_carros@2x.png */; };
+		EAA20E141DEA190E00F409DB /* tab_sobre.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E051DEA190E00F409DB /* tab_sobre.png */; };
+		EAA20E151DEA190E00F409DB /* tab_sobre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E061DEA190E00F409DB /* tab_sobre@2x.png */; };
+		EAA20E161DEA190E00F409DB /* carros_classicos.json in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E081DEA190E00F409DB /* carros_classicos.json */; };
+		EAA20E171DEA190E00F409DB /* carros_esportivos.json in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E091DEA190E00F409DB /* carros_esportivos.json */; };
+		EAA20E181DEA190E00F409DB /* carros_luxo.json in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E0A1DEA190E00F409DB /* carros_luxo.json */; };
+		EAA20E191DEA190E00F409DB /* carros_classicos.xml in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E0C1DEA190E00F409DB /* carros_classicos.xml */; };
+		EAA20E1A1DEA190E00F409DB /* carros_esportivos.xml in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E0D1DEA190E00F409DB /* carros_esportivos.xml */; };
+		EAA20E1B1DEA190E00F409DB /* carros_luxo.xml in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E0E1DEA190E00F409DB /* carros_luxo.xml */; };
+		EAA20E1E1DEA1C1900F409DB /* ListaCarrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA20E1C1DEA1C1900F409DB /* ListaCarrosViewController.swift */; };
+		EAA20E1F1DEA1C1900F409DB /* ListaCarrosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E1D1DEA1C1900F409DB /* ListaCarrosViewController.xib */; };
+		EAA20E221DEA1C4000F409DB /* DetalhesCarrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA20E201DEA1C4000F409DB /* DetalhesCarrosViewController.swift */; };
+		EAA20E231DEA1C4000F409DB /* DetalhesCarrosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E211DEA1C4000F409DB /* DetalhesCarrosViewController.xib */; };
+		EAA20E261DEA1C5500F409DB /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA20E241DEA1C5500F409DB /* SobreViewController.swift */; };
+		EAA20E271DEA1C5500F409DB /* SobreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E251DEA1C5500F409DB /* SobreViewController.xib */; };
+		EAA20E2C1DEA2F7100F409DB /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA20E2B1DEA2F7100F409DB /* Alerta.swift */; };
+		EAA20E2E1DEA319B00F409DB /* Carro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA20E2D1DEA319B00F409DB /* Carro.swift */; };
+		EAA20E301DEA323900F409DB /* CarroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA20E2F1DEA323900F409DB /* CarroService.swift */; };
+		EAA20E361DEA3E7000F409DB /* ferrari.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA20E351DEA3E7000F409DB /* ferrari.png */; };
+		EAD1B2191DF372E400223E51 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD1B2181DF372E400223E51 /* libsqlite3.tbd */; };
+		EAD1B21E1DF3742A00223E51 /* SQLiteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B21B1DF3742A00223E51 /* SQLiteHelper.swift */; };
+		EAD1B21F1DF3742A00223E51 /* SQLiteObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B21D1DF3742A00223E51 /* SQLiteObjc.m */; };
+		EAD1B2211DF3752500223E51 /* CarroDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B2201DF3752500223E51 /* CarroDB.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA5B1D731DEB2B78005166BA /* DownloadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadImageView.swift; path = ../DownloadImageView.swift; sourceTree = "<group>"; };
+		EA5B1D751DEB3113005166BA /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringUtils.swift; path = ../StringUtils.swift; sourceTree = "<group>"; };
+		EA6378721DF36D8A00FE06A7 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		EA7735B31E0D9A8B00BFD5BD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EA7735B51E0D9A9700BFD5BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EA7735B91E0D9CA500BFD5BD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		EA7735BA1E0D9CA500BFD5BD /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = ../MapViewController.xib; sourceTree = "<group>"; };
+		EA875DB61DEA6C0800178D26 /* CarroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarroCell.swift; sourceTree = "<group>"; };
+		EA875DB81DEA6C9800178D26 /* CarroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarroCell.xib; sourceTree = "<group>"; };
+		EA875DBA1DEA72C300178D26 /* carros_classicos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_classicos.json; sourceTree = "<group>"; };
+		EA875DBB1DEA72C300178D26 /* carros_esportivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_esportivos.json; sourceTree = "<group>"; };
+		EA875DBC1DEA72C300178D26 /* carros_luxo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_luxo.json; sourceTree = "<group>"; };
+		EA875DC01DEA72D000178D26 /* carros_classicos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_classicos.xml; sourceTree = "<group>"; };
+		EA875DC11DEA72D000178D26 /* carros_esportivos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_esportivos.xml; sourceTree = "<group>"; };
+		EA875DC21DEA72D000178D26 /* carros_luxo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_luxo.xml; sourceTree = "<group>"; };
+		EA875DC81DEA736B00178D26 /* XMLCarroParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLCarroParser.swift; path = ../Resources/XMLCarroParser.swift; sourceTree = "<group>"; };
+		EAA20DE91DEA165000F409DB /* Carros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carros.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA20DEC1DEA165000F409DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAA20DF61DEA165000F409DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAA20DF81DEA165000F409DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA20E011DEA190E00F409DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAA20E031DEA190E00F409DB /* tab_carros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_carros.png; sourceTree = "<group>"; };
+		EAA20E041DEA190E00F409DB /* tab_carros@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_carros@2x.png"; sourceTree = "<group>"; };
+		EAA20E051DEA190E00F409DB /* tab_sobre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_sobre.png; sourceTree = "<group>"; };
+		EAA20E061DEA190E00F409DB /* tab_sobre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_sobre@2x.png"; sourceTree = "<group>"; };
+		EAA20E081DEA190E00F409DB /* carros_classicos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_classicos.json; sourceTree = "<group>"; };
+		EAA20E091DEA190E00F409DB /* carros_esportivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_esportivos.json; sourceTree = "<group>"; };
+		EAA20E0A1DEA190E00F409DB /* carros_luxo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_luxo.json; sourceTree = "<group>"; };
+		EAA20E0C1DEA190E00F409DB /* carros_classicos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_classicos.xml; sourceTree = "<group>"; };
+		EAA20E0D1DEA190E00F409DB /* carros_esportivos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_esportivos.xml; sourceTree = "<group>"; };
+		EAA20E0E1DEA190E00F409DB /* carros_luxo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_luxo.xml; sourceTree = "<group>"; };
+		EAA20E1C1DEA1C1900F409DB /* ListaCarrosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaCarrosViewController.swift; path = Classes/ListaCarros/ListaCarrosViewController.swift; sourceTree = "<group>"; };
+		EAA20E1D1DEA1C1900F409DB /* ListaCarrosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListaCarrosViewController.xib; path = Classes/ListaCarros/ListaCarrosViewController.xib; sourceTree = "<group>"; };
+		EAA20E201DEA1C4000F409DB /* DetalhesCarrosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesCarrosViewController.swift; sourceTree = "<group>"; };
+		EAA20E211DEA1C4000F409DB /* DetalhesCarrosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalhesCarrosViewController.xib; sourceTree = "<group>"; };
+		EAA20E241DEA1C5500F409DB /* SobreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		EAA20E251DEA1C5500F409DB /* SobreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SobreViewController.xib; sourceTree = "<group>"; };
+		EAA20E2B1DEA2F7100F409DB /* Alerta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
+		EAA20E2D1DEA319B00F409DB /* Carro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carro.swift; sourceTree = "<group>"; };
+		EAA20E2F1DEA323900F409DB /* CarroService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarroService.swift; sourceTree = "<group>"; };
+		EAA20E351DEA3E7000F409DB /* ferrari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ferrari.png; sourceTree = "<group>"; };
+		EAD1B2181DF372E400223E51 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EAD1B21A1DF3742900223E51 /* Carros-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carros-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAD1B21B1DF3742A00223E51 /* SQLiteHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteHelper.swift; sourceTree = "<group>"; };
+		EAD1B21C1DF3742A00223E51 /* SQLiteObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteObjc.h; sourceTree = "<group>"; };
+		EAD1B21D1DF3742A00223E51 /* SQLiteObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteObjc.m; sourceTree = "<group>"; };
+		EAD1B2201DF3752500223E51 /* CarroDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarroDB.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAA20DE61DEA165000F409DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7735B61E0D9A9700BFD5BD /* CoreLocation.framework in Frameworks */,
+				EA7735B41E0D9A8B00BFD5BD /* MapKit.framework in Frameworks */,
+				EAD1B2191DF372E400223E51 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA875DC61DEA72D900178D26 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				EA875DBA1DEA72C300178D26 /* carros_classicos.json */,
+				EA875DBB1DEA72C300178D26 /* carros_esportivos.json */,
+				EA875DBC1DEA72C300178D26 /* carros_luxo.json */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		EA875DC71DEA72ED00178D26 /* Xml */ = {
+			isa = PBXGroup;
+			children = (
+				EA875DC01DEA72D000178D26 /* carros_classicos.xml */,
+				EA875DC11DEA72D000178D26 /* carros_esportivos.xml */,
+				EA875DC21DEA72D000178D26 /* carros_luxo.xml */,
+			);
+			name = Xml;
+			sourceTree = "<group>";
+		};
+		EAA20DE01DEA164F00F409DB = {
+			isa = PBXGroup;
+			children = (
+				EA7735B51E0D9A9700BFD5BD /* CoreLocation.framework */,
+				EA7735B31E0D9A8B00BFD5BD /* MapKit.framework */,
+				EAD1B2181DF372E400223E51 /* libsqlite3.tbd */,
+				EAA20DFE1DEA190E00F409DB /* Resources */,
+				EAA20DEB1DEA165000F409DB /* Carros */,
+				EAA20DEA1DEA165000F409DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAA20DEA1DEA165000F409DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAA20DE91DEA165000F409DB /* Carros.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAA20DEB1DEA165000F409DB /* Carros */ = {
+			isa = PBXGroup;
+			children = (
+				EAA20E281DEA1D5400F409DB /* Classes */,
+				EAA20DEC1DEA165000F409DB /* AppDelegate.swift */,
+				EAA20DF51DEA165000F409DB /* LaunchScreen.storyboard */,
+				EAA20DF81DEA165000F409DB /* Info.plist */,
+			);
+			path = Carros;
+			sourceTree = "<group>";
+		};
+		EAA20DFE1DEA190E00F409DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA875DC71DEA72ED00178D26 /* Xml */,
+				EA875DC61DEA72D900178D26 /* Json */,
+				EAA20DFF1DEA190E00F409DB /* Imagens */,
+				EAA20E071DEA190E00F409DB /* json */,
+				EAA20E0B1DEA190E00F409DB /* xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAA20DFF1DEA190E00F409DB /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				EAA20E011DEA190E00F409DB /* Images.xcassets */,
+				EAA20E031DEA190E00F409DB /* tab_carros.png */,
+				EAA20E351DEA3E7000F409DB /* ferrari.png */,
+				EAA20E041DEA190E00F409DB /* tab_carros@2x.png */,
+				EAA20E051DEA190E00F409DB /* tab_sobre.png */,
+				EAA20E061DEA190E00F409DB /* tab_sobre@2x.png */,
+			);
+			path = Imagens;
+			sourceTree = "<group>";
+		};
+		EAA20E071DEA190E00F409DB /* json */ = {
+			isa = PBXGroup;
+			children = (
+				EAA20E081DEA190E00F409DB /* carros_classicos.json */,
+				EAA20E091DEA190E00F409DB /* carros_esportivos.json */,
+				EAA20E0A1DEA190E00F409DB /* carros_luxo.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		EAA20E0B1DEA190E00F409DB /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				EAA20E0C1DEA190E00F409DB /* carros_classicos.xml */,
+				EAA20E0D1DEA190E00F409DB /* carros_esportivos.xml */,
+				EAA20E0E1DEA190E00F409DB /* carros_luxo.xml */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		EAA20E281DEA1D5400F409DB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EAD1B21B1DF3742A00223E51 /* SQLiteHelper.swift */,
+				EAD1B21C1DF3742A00223E51 /* SQLiteObjc.h */,
+				EAD1B21D1DF3742A00223E51 /* SQLiteObjc.m */,
+				EAA20E291DEA1D5E00F409DB /* ListaCarros */,
+				EAD1B21A1DF3742900223E51 /* Carros-Bridging-Header.h */,
+				EAD1B2201DF3752500223E51 /* CarroDB.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EAA20E291DEA1D5E00F409DB /* ListaCarros */ = {
+			isa = PBXGroup;
+			children = (
+				EA7735B91E0D9CA500BFD5BD /* MapViewController.swift */,
+				EA7735BA1E0D9CA500BFD5BD /* MapViewController.xib */,
+				EA5B1D731DEB2B78005166BA /* DownloadImageView.swift */,
+				EA5B1D751DEB3113005166BA /* StringUtils.swift */,
+				EA875DC81DEA736B00178D26 /* XMLCarroParser.swift */,
+				EAA20E1C1DEA1C1900F409DB /* ListaCarrosViewController.swift */,
+				EAA20E2D1DEA319B00F409DB /* Carro.swift */,
+				EA6378721DF36D8A00FE06A7 /* Prefs.swift */,
+				EAA20E2F1DEA323900F409DB /* CarroService.swift */,
+				EAA20E2B1DEA2F7100F409DB /* Alerta.swift */,
+				EAA20E201DEA1C4000F409DB /* DetalhesCarrosViewController.swift */,
+				EAA20E1D1DEA1C1900F409DB /* ListaCarrosViewController.xib */,
+				EA875DB61DEA6C0800178D26 /* CarroCell.swift */,
+				EA875DB81DEA6C9800178D26 /* CarroCell.xib */,
+				EAA20E211DEA1C4000F409DB /* DetalhesCarrosViewController.xib */,
+				EAA20E2A1DEA1D6700F409DB /* Sobre */,
+			);
+			name = ListaCarros;
+			sourceTree = "<group>";
+		};
+		EAA20E2A1DEA1D6700F409DB /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				EAA20E241DEA1C5500F409DB /* SobreViewController.swift */,
+				EAA20E251DEA1C5500F409DB /* SobreViewController.xib */,
+			);
+			name = Sobre;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAA20DE81DEA165000F409DB /* Carros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA20DFB1DEA165000F409DB /* Build configuration list for PBXNativeTarget "Carros" */;
+			buildPhases = (
+				EAA20DE51DEA165000F409DB /* Sources */,
+				EAA20DE61DEA165000F409DB /* Frameworks */,
+				EAA20DE71DEA165000F409DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carros;
+			productName = Carros;
+			productReference = EAA20DE91DEA165000F409DB /* Carros.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAA20DE11DEA164F00F409DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Andre Brilho";
+				TargetAttributes = {
+					EAA20DE81DEA165000F409DB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EAA20DE41DEA164F00F409DB /* Build configuration list for PBXProject "Carros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAA20DE01DEA164F00F409DB;
+			productRefGroup = EAA20DEA1DEA165000F409DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAA20DE81DEA165000F409DB /* Carros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAA20DE71DEA165000F409DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA20E181DEA190E00F409DB /* carros_luxo.json in Resources */,
+				EAA20E141DEA190E00F409DB /* tab_sobre.png in Resources */,
+				EA875DBD1DEA72C300178D26 /* carros_classicos.json in Resources */,
+				EAA20E161DEA190E00F409DB /* carros_classicos.json in Resources */,
+				EAA20E271DEA1C5500F409DB /* SobreViewController.xib in Resources */,
+				EAA20E171DEA190E00F409DB /* carros_esportivos.json in Resources */,
+				EAA20E101DEA190E00F409DB /* Images.xcassets in Resources */,
+				EA875DB91DEA6C9800178D26 /* CarroCell.xib in Resources */,
+				EAA20E1F1DEA1C1900F409DB /* ListaCarrosViewController.xib in Resources */,
+				EA875DBF1DEA72C300178D26 /* carros_luxo.json in Resources */,
+				EAA20E131DEA190E00F409DB /* tab_carros@2x.png in Resources */,
+				EA875DC51DEA72D000178D26 /* carros_luxo.xml in Resources */,
+				EA875DBE1DEA72C300178D26 /* carros_esportivos.json in Resources */,
+				EAA20E231DEA1C4000F409DB /* DetalhesCarrosViewController.xib in Resources */,
+				EAA20E361DEA3E7000F409DB /* ferrari.png in Resources */,
+				EA875DC31DEA72D000178D26 /* carros_classicos.xml in Resources */,
+				EAA20E1B1DEA190E00F409DB /* carros_luxo.xml in Resources */,
+				EAA20DF71DEA165000F409DB /* LaunchScreen.storyboard in Resources */,
+				EAA20E191DEA190E00F409DB /* carros_classicos.xml in Resources */,
+				EA7735BC1E0D9CA500BFD5BD /* MapViewController.xib in Resources */,
+				EAA20E121DEA190E00F409DB /* tab_carros.png in Resources */,
+				EA875DC41DEA72D000178D26 /* carros_esportivos.xml in Resources */,
+				EAA20E1A1DEA190E00F409DB /* carros_esportivos.xml in Resources */,
+				EAA20E151DEA190E00F409DB /* tab_sobre@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAA20DE51DEA165000F409DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA20E1E1DEA1C1900F409DB /* ListaCarrosViewController.swift in Sources */,
+				EA875DB71DEA6C0800178D26 /* CarroCell.swift in Sources */,
+				EA5B1D741DEB2B78005166BA /* DownloadImageView.swift in Sources */,
+				EAD1B21F1DF3742A00223E51 /* SQLiteObjc.m in Sources */,
+				EAA20E2E1DEA319B00F409DB /* Carro.swift in Sources */,
+				EAA20E2C1DEA2F7100F409DB /* Alerta.swift in Sources */,
+				EAA20E221DEA1C4000F409DB /* DetalhesCarrosViewController.swift in Sources */,
+				EA6378731DF36D8A00FE06A7 /* Prefs.swift in Sources */,
+				EAA20E261DEA1C5500F409DB /* SobreViewController.swift in Sources */,
+				EAD1B2211DF3752500223E51 /* CarroDB.swift in Sources */,
+				EAD1B21E1DF3742A00223E51 /* SQLiteHelper.swift in Sources */,
+				EAA20E301DEA323900F409DB /* CarroService.swift in Sources */,
+				EA5B1D761DEB3113005166BA /* StringUtils.swift in Sources */,
+				EAA20DED1DEA165000F409DB /* AppDelegate.swift in Sources */,
+				EA875DC91DEA736C00178D26 /* XMLCarroParser.swift in Sources */,
+				EA7735BB1E0D9CA500BFD5BD /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAA20DF51DEA165000F409DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA20DF61DEA165000F409DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAA20DF91DEA165000F409DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAA20DFA1DEA165000F409DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAA20DFC1DEA165000F409DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Carros/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrebrilho.Carros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carros/Carros-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAA20DFD1DEA165000F409DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Carros/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrebrilho.Carros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carros/Carros-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAA20DE41DEA164F00F409DB /* Build configuration list for PBXProject "Carros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA20DF91DEA165000F409DB /* Debug */,
+				EAA20DFA1DEA165000F409DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA20DFB1DEA165000F409DB /* Build configuration list for PBXNativeTarget "Carros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA20DFC1DEA165000F409DB /* Debug */,
+				EAA20DFD1DEA165000F409DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAA20DE11DEA164F00F409DB /* Project object */;
+}
